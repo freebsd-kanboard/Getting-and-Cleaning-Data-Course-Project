@@ -1,7 +1,7 @@
 #rm(list=ls())
 library(reshape2)
 
-pth.dir.root = 'specdata/UCI HAR Dataset'
+pth.dir.root = '.'
 pth.dir.test = 'test'
 pth.dir.train = 'train'
 
