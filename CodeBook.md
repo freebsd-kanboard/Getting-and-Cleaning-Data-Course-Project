@@ -1,7 +1,8 @@
 # Codebook
 
 The source data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-Also more detailed description of the experiment and meaning of the data can be found above. In general:
+Also more detailed description of the experiment and meaning of the data can be found in the file mentioned above. In general in the source
+there are the following files, that contain the details:
 
 - `README.txt`
 - `features_info.txt`: Shows information about the variables used on the feature vector.
@@ -100,4 +101,19 @@ The result of the transformation safed as `tidy_data.txt`. The following variabl
 - fBodyBodyGyroJerkMag-mean()
 - fBodyBodyGyroJerkMag-std()
 - fBodyBodyGyroJerkMag-meanFreq()
+
+Please check original source for more details.
+
+## What it does
+
+The original data is being transformed in the following way:
+
+- load the files containing `training` and `test` data,
+- load data regarding `features` and `labels`,
+- merge `training` and `test` data sets,
+- add to merged files `labels` and `features`
+- filter the variables by names to leave mean and standard deviations,
+- aggregate (`mean`) the data bases on `label` and `feature`,
+- save the result as a new file.
+
 
